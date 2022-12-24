@@ -1,0 +1,8 @@
+cbc.gpr
+cbc.rep/*
+cbc.lock*
+9/cbc22_task9/solver/*
+9/cbc22_task9/solver_v2/*
+9/cbc22_task9/solver_v3/*
+*/notes.txt
+*/solve.txt

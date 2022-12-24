@@ -183,58 +183,57 @@ if (*(undefined **)(ulong *)(unaff_R14 + 0x10) <= register0x00000020 &&
 
 Lets take a peek into the `main.p4hsJ3KeOvw` function.
 ```c
-  do {
-                    /* /generator/cmd/keyMaster/main.go:69 */
-    puVar6 = (undefined *)register0x00000020;
-    if (*(undefined **)(ulong *)(unaff_R14 + 0x10) <=
-        (undefined *)((long)register0x00000020 + -0x10) &&
-        (undefined *)((long)register0x00000020 + -0x10) !=
-        *(undefined **)(ulong *)(unaff_R14 + 0x10)) {
-      puVar6 = (undefined *)((long)register0x00000020 + -0x90);
-      *(undefined **)((long)register0x00000020 + -8) = unaff_RBP;
-      unaff_RBP = (undefined *)((long)register0x00000020 + -8);
-                    /* /generator/cmd/keyMaster/main.go:70 */
-      uVar5 = 0x2c;
-      *(undefined8 *)((long)register0x00000020 + -0x98) = 0x5b849e;
-      encoding/base64.(*Encoding).DecodeString
-                (DAT_008765d8,
-                 "hAPv7ZnBM1TOAGVOgY9mVn1swzIlsvJZC0ZM0PwwyFA=insufficient data for c..."
-                 ,0x2c);
-                    /* /generator/cmd/keyMaster/main.go:71 */
-      if (in_RDI != 0) {
-                    /* /generator/cmd/keyMaster/main.go:72 */
-        return;
-      }
-                    /* /generator/cmd/keyMaster/main.go:70 */
-      *(char **)((long)register0x00000020 + -0x40) =
-           "hAPv7ZnBM1TOAGVOgY9mVn1swzIlsvJZC0ZM0PwwyFA=insufficient data for c..."
-      ;
-      ...
-      runtime.memmove(*(undefined8 *)((long)register0x00000020 + -0x90),
-                      *(undefined8 *)((long)register0x00000020 + -0x88),
-                      *(undefined8 *)((long)register0x00000020 + -0x80));
-                    /* /generator/cmd/keyMaster/main.go:49 */
-      lVar1 = *(long *)((long)register0x00000020 + -0x10);
-      lVar2 = *(long *)((long)register0x00000020 + -0x28);
-      in_RDI = *(ulong *)((long)register0x00000020 + -0x48);
-      lVar3 = *(long *)((long)register0x00000020 + -0x30);
-      lVar4 = 0;
-      while( true ) {
-                    /* /generator/cmd/keyMaster/main.go:49 */
-        if (lVar3 <= lVar4) {
-                    /* /generator/cmd/keyMaster/main.go:74 */
-          *(undefined8 *)((long)register0x00000020 + -0x98) = 0x5b859d;
-          golang.org/x/crypto/pbkdf2.Key
-                    (lVar1,lVar3,lVar3,*(undefined8 *)((long)register0x00000020 + -0x20),
-                     *(undefined8 *)((long)register0x00000020 + -0x40),
-                     *(undefined8 *)((long)register0x00000020 + -0x38),0x1000,0x20,
-                     &PTR_crypto/sha256.New_006e7a88);
-                    /* /generator/cmd/keyMaster/main.go:75 */
-          return;
-        }
+do {
+	/* /generator/cmd/keyMaster/main.go:69 */
+puVar6 = (undefined *)register0x00000020;
+if (*(undefined **)(ulong *)(unaff_R14 + 0x10) <=
+	(undefined *)((long)register0x00000020 + -0x10) &&
+	(undefined *)((long)register0x00000020 + -0x10) !=
+	*(undefined **)(ulong *)(unaff_R14 + 0x10)) {
+	puVar6 = (undefined *)((long)register0x00000020 + -0x90);
+	*(undefined **)((long)register0x00000020 + -8) = unaff_RBP;
+	unaff_RBP = (undefined *)((long)register0x00000020 + -8);
+	/* /generator/cmd/keyMaster/main.go:70 */
+	uVar5 = 0x2c;
+	*(undefined8 *)((long)register0x00000020 + -0x98) = 0x5b849e;
+	encoding/base64.(*Encoding).DecodeString
+			(DAT_008765d8,
+				"hAPv7ZnBM1TOAGVOgY9mVn1swzIlsvJZC0ZM0PwwyFA=insufficient data for c..."
+				,0x2c);
+	/* /generator/cmd/keyMaster/main.go:71 */
+	if (in_RDI != 0) {
+	/* /generator/cmd/keyMaster/main.go:72 */
+		return;
+	}
+	/* /generator/cmd/keyMaster/main.go:70 */
+	*(char **)((long)register0x00000020 + -0x40) =
+		"hAPv7ZnBM1TOAGVOgY9mVn1swzIlsvJZC0ZM0PwwyFA=insufficient data for c..."
+	;
 	...
-  } while( true );
-}
+	runtime.memmove(*(undefined8 *)((long)register0x00000020 + -0x90),
+					*(undefined8 *)((long)register0x00000020 + -0x88),
+					*(undefined8 *)((long)register0x00000020 + -0x80));
+	/* /generator/cmd/keyMaster/main.go:49 */
+	lVar1 = *(long *)((long)register0x00000020 + -0x10);
+	lVar2 = *(long *)((long)register0x00000020 + -0x28);
+	in_RDI = *(ulong *)((long)register0x00000020 + -0x48);
+	lVar3 = *(long *)((long)register0x00000020 + -0x30);
+	lVar4 = 0;
+	while( true ) {
+	/* /generator/cmd/keyMaster/main.go:49 */
+	if (lVar3 <= lVar4) {
+		/* /generator/cmd/keyMaster/main.go:74 */
+		*(undefined8 *)((long)register0x00000020 + -0x98) = 0x5b859d;
+		golang.org/x/crypto/pbkdf2.Key
+				(lVar1,lVar3,lVar3,*(undefined8 *)((long)register0x00000020 + -0x20),
+					*(undefined8 *)((long)register0x00000020 + -0x40),
+					*(undefined8 *)((long)register0x00000020 + -0x38),0x1000,0x20,
+					&PTR_crypto/sha256.New_006e7a88);
+		/* /generator/cmd/keyMaster/main.go:75 */
+		return;
+	}
+...
+} while( true );
 ```
 
 It seems like this function decodes some hardcoded base64 string and passes it into the `golang.org/x/crypto/pbkdf2.Key` function. Looking that up, it seems to take in a password and give us a key of some kind. Lets move on to the rest of the functions.
@@ -301,29 +300,29 @@ register0x00000020 = (BADSPACEBASE *)puVar3;
 It seems as if it sets the time to the current time, generates a UUID based on the current time, encodes it into hex. Nothing major seen yet. Let's look at the other function `main.mtHO6enMvyA`:
 
 ```c
-  undefined8 extraout_RAX;
-  long unaff_R14;
-  undefined8 uStack0000000000000008;
-  undefined8 uStack0000000000000010;
-  undefined8 uStack0000000000000018;
-  undefined local_20 [24];
-  
-  uStack0000000000000008 = param_1;
-  uStack0000000000000018 = param_3;
-  uStack0000000000000010 = param_2;
-                    /* /generator/cmd/keyMaster/main.go:94 */
-  while (local_20 < *(undefined **)(ulong *)(unaff_R14 + 0x10) ||
-         local_20 == *(undefined **)(ulong *)(unaff_R14 + 0x10)) {
-                    /* /generator/cmd/keyMaster/main.go:94 */
-    runtime.morestack_noctxt();
-  }
-                    /* /generator/cmd/keyMaster/main.go:95 */
-  runtime.makeslice(&DAT_00690c80,0x10,0x10);
-                    /* /generator/cmd/keyMaster/main.go:96 */
-  crypto/rand.Read(extraout_RAX,0x10,0x10);
-                    /* /generator/cmd/keyMaster/main.go:97 */
-                    /* /generator/cmd/keyMaster/main.go:98 */
-  return;
+undefined8 extraout_RAX;
+long unaff_R14;
+undefined8 uStack0000000000000008;
+undefined8 uStack0000000000000010;
+undefined8 uStack0000000000000018;
+undefined local_20 [24];
+
+uStack0000000000000008 = param_1;
+uStack0000000000000018 = param_3;
+uStack0000000000000010 = param_2;
+				/* /generator/cmd/keyMaster/main.go:94 */
+while (local_20 < *(undefined **)(ulong *)(unaff_R14 + 0x10) ||
+		local_20 == *(undefined **)(ulong *)(unaff_R14 + 0x10)) {
+				/* /generator/cmd/keyMaster/main.go:94 */
+runtime.morestack_noctxt();
+}
+				/* /generator/cmd/keyMaster/main.go:95 */
+runtime.makeslice(&DAT_00690c80,0x10,0x10);
+				/* /generator/cmd/keyMaster/main.go:96 */
+crypto/rand.Read(extraout_RAX,0x10,0x10);
+				/* /generator/cmd/keyMaster/main.go:97 */
+				/* /generator/cmd/keyMaster/main.go:98 */
+return;
 ```
 
 That's it? It just grabs some random values? That can't be right. Looking at the assembly, it seems as if there's more to this function than the disassembly shows:
@@ -340,29 +339,29 @@ Now we see so much more in the disassembly:
 lVar2 = 0x10;
 local_10 = extraout_RAX;
 crypto/rand.Read(extraout_RAX,0x10,0x10);
-				/* /generator/cmd/keyMaster/main.go:97 */
+	/* /generator/cmd/keyMaster/main.go:97 */
 if (true) {
-				/* /generator/cmd/keyMaster/main.go:98 */
-return;
+	/* /generator/cmd/keyMaster/main.go:98 */
+	return;
 }
-				/* /generator/cmd/keyMaster/main.go:100 */
+	/* /generator/cmd/keyMaster/main.go:100 */
 main.p4hsJ3KeOvw();
-				/* /generator/cmd/keyMaster/main.go:101 */
+	/* /generator/cmd/keyMaster/main.go:101 */
 crypto/aes.NewCipher(extraout_RAX_00,0x10,lVar2);
 ...
-				/* /generator/cmd/keyMaster/main.go:105 */
+	/* /generator/cmd/keyMaster/main.go:105 */
 main.oJBq2ENUTYQ(uStack0000000000000008,lStack0000000000000010,uStack0000000000000018,0x10);
-				/* /generator/cmd/keyMaster/main.go:106 */
+	/* /generator/cmd/keyMaster/main.go:106 */
 crypto/cipher.NewCBCEncrypter(local_18,0x10,local_10,0x10,0x10);
-				/* /generator/cmd/keyMaster/main.go:108 */
-				/* /generator/cmd/keyMaster/main.go:107 */
+	/* /generator/cmd/keyMaster/main.go:108 */
+	/* /generator/cmd/keyMaster/main.go:107 */
 runtime.makeslice(&DAT_00690c80,lVar1,lVar1);
-				/* /generator/cmd/keyMaster/main.go:108 */
+	/* /generator/cmd/keyMaster/main.go:108 */
 (**(code **)(extraout_RAX_03 + 0x20))
 		(lVar1,extraout_RAX_02,*(code **)(extraout_RAX_03 + 0x20),lVar1,lVar1,uVar3);
-				/* /generator/cmd/keyMaster/main.go:109 */
+	/* /generator/cmd/keyMaster/main.go:109 */
 if (0x10 < lVar1 + 0x10U) {
-runtime.growslice(&DAT_00690c80,local_10,0x10,0x10,lVar1 + 0x10U);
+	runtime.growslice(&DAT_00690c80,local_10,0x10,0x10,lVar1 + 0x10U);
 }
 runtime.memmove(in_stack_ffffffffffffff60,in_stack_ffffffffffffff68,in_stack_ffffffffffffff70);
 return;
